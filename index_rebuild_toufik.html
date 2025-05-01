@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your CV – Toufik</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    :root {
+      --bg-light: #f9f9f9;
+      --text-light: #222;
+      --bg-dark: #121212;
+      --text-dark: #eee;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+      scroll-behavior: smooth;
+    }
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .dark header {
+      background: #1e1e1e;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .toggle-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .dark section {
+      border-color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    button {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #444;
+      color: #fff;
+    }
+    .dark button {
+      background: #ddd;
+      color: #000;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-img {
+      width: 200px;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="toggle-buttons">
+      <button onclick="toggleLanguage()">বাংলা</button>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="about-container">
+      <img src="Pics.jpg" alt="Toufik" class="about-img" />
+      <h2 data-en="About Me" data-bn="আমার সম্পর্কে">About Me</h2>
+      <p data-en="Toufik is a dynamic and passionate individual based in London. He is a BEng Global Design Engineering student at TEDI-London, an innovation-driven entrepreneur, and a content creator. He’s the founder of LSDV, a luxury makeup brand, and Maa’s Meals, a homemade food delivery app. He loves football, fashion, and inspiring others through his journey." 
+         data-bn="তৌফিক একজন উদ্যমী ও উদ্ভাবনী ব্যক্তি, যিনি লন্ডনে থাকেন। তিনি টেডি-লন্ডনে গ্লোবাল ডিজাইন ইঞ্জিনিয়ারিং এ অধ্যয়নরত, একজন উদ্যোক্তা ও কনটেন্ট নির্মাতা। তিনি LSDV বিলাসবহুল মেকআপ ব্র্যান্ড এবং Maa's Meals হোমমেইড ফুড অ্যাপের প্রতিষ্ঠাতা। তিনি ফুটবল, ফ্যাশন এবং তার জীবনযাত্রার মাধ্যমে অন্যদের অনুপ্রাণিত করতে ভালোবাসেন।">
+        Toufik is a dynamic and passionate individual based in London. He is a BEng Global Design Engineering student at TEDI-London, an innovation-driven entrepreneur, and a content creator. He’s the founder of LSDV, a luxury makeup brand, and Maa’s Meals, a homemade food delivery app. He loves football, fashion, and inspiring others through his journey.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 data-en="Education" data-bn="শিক্ষা">Education</h2>
+    <ul>
+      <li>BEng Global Design Engineering – TEDI-London (starting Sept 2025)</li>
+      <li>Foundation + Year 1 – Electrical Engineering, University of Bolton</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2 data-en="Skills" data-bn="দক্ষতা">Skills</h2>
+    <ul>
+      <li>Business & Innovation</li>
+      <li>Electronics & Circuit Design</li>
+      <li>Adobe Suite, CapCut, Content Creation</li>
+      <li>Football – Competitive & Social Play</li>
+      <li>Public Speaking & Leadership</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 data-en="Projects" data-bn="প্রকল্প">Projects</h2>
+    <ul>
+      <li>Gravity Cooler 2.0 – Off-grid cooling tech for hot regions</li>
+      <li>DeepTrace Lite – Real-time deepfake detection tool</li>
+      <li>Maa’s Meals – Platform for homemade food delivery</li>
+      <li>LSDV – Luxury, minimal skincare-inspired makeup brand</li>
+      <li>Bijoy Capital – Investment fund connecting Bangladesh to the UK</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 data-en="Contact" data-bn="যোগাযোগ">Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p><a href="Toufik_CV.pdf" download>📄 Download My CV</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toufik. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@toufik.davinci" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/toufik.davinci" target="_blank">Instagram</a>
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="https://www.twitch.tv/toufik.davinci" target="_blank">Twitch</a>
+      <a href="https://www.linkedin.com/in/toufik-davinci" target="_blank">LinkedIn</a>
+      <a href="https://www.snapchat.com/add/toufik.davinci" target="_blank">Snapchat</a>
+      <a href="https://api.whatsapp.com/send?phone=+441234567890" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/toufik.davinci" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
+    function toggleLanguage() {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        const current = el.innerText.trim();
+        const newText = current === el.getAttribute('data-en') ? el.getAttribute('data-bn') : el.getAttribute('data-en');
+        el.innerText = newText;
+      });
+    }
+  </script>
+</body>
+</html>
